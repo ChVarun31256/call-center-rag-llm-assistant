@@ -1,4 +1,8 @@
 # 📞 Call Center RAG LLM Assistant
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![Flask](https://img.shields.io/badge/Flask-Web_App-black)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
 
 An AI-powered Call Center Assistant that uses Retrieval-Augmented Generation (RAG) and Large Language Models (LLMs) to answer customer queries from uploaded documents.
 
