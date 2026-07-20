@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="docs/banner.png" alt="Banner-1">
+</p>
+
+# 📞 Call Center RAG LLM Assistant
 # 📞 Call Center RAG LLM Assistant
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![Flask](https://img.shields.io/badge/Flask-Web_App-black)
