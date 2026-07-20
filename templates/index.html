@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Chatbot</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+            padding: 30px;
+        }
+
+        .container {
+            width: 70%;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        input[type=file],
+        input[type=text] {
+
+            width: 100%;
+            padding: 15px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+
+            font-size: 18px;
+        }
+
+        button {
+
+            padding: 15px 30px;
+
+            font-size: 18px;
+
+            background-color: #007BFF;
+
+            color: white;
+
+            border: none;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+        }
+
+        button:hover {
+
+            background-color: #0056b3;
+        }
+
+        .answer {
+
+            margin-top: 30px;
+
+            padding: 25px;
+
+            background-color: #f8f9fa;
+
+            border-left: 6px solid #007BFF;
+
+            font-size: 20px;
+
+            line-height: 1.8;
+
+            white-space: pre-wrap;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>PDF Question Answering System</h1>
+
+    {% if not pdf_loaded %}
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <input type="file"
+               name="pdf"
+               accept=".pdf"
+               required>
+
+        <button type="submit"
+                name="upload">
+
+            Upload PDF
+
+        </button>
+
+    </form>
+
+   {% else %}
+
+<p style="color:green;
+          font-size:20px;">
+
+    PDF uploaded successfully.
+
+</p>
+
+<form method="POST" style="display:inline;">
+
+    <button type="submit"
+            name="reset">
+
+        Upload Another PDF
+
+    </button>
+
+</form>
+
+<br><br>
+
+<form method="POST">
+
+    <input type="text"
+           name="question"
+           placeholder="Ask a question..."
+           required>
+
+    <button type="submit"
+            name="ask">
+
+        Ask
+
+    </button>
+
+</form>
+
+{% endif %}
+
+    {% if answer %}
+
+    <div class="answer">
+
+        {{ answer }}
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+
+</html>
