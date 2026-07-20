@@ -75,9 +75,21 @@ python app.py
 
 ## 📸 Screenshots
 
-Add screenshots of your application here.
+### 🏠 Home Page
+
+![Home Page](docs/homepage-1.png)
 
 ---
+
+### 📄 Upload PDF
+
+![Upload PDF](docs/pdfupoad-1.png)
+
+---
+
+### 🤖 Chatbot Response
+
+![Chatbot Response](docs/chatbotanswer-1.png)
 
 ## 📈 Future Improvements
 
