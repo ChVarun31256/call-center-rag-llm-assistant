@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/banner.png" alt="Banner-1">
+  <img src="docs/banner.png" alt="BANNER-1">
 </p>
 
 # 📞 Call Center RAG LLM Assistant
