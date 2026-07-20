@@ -1,0 +1,10 @@
+flask
+transformers
+torch
+sentence-transformers
+faiss-cpu
+langchain
+langchain-community
+python-dotenv
+PyPDF2
+numpy
