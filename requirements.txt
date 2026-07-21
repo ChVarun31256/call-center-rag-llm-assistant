@@ -1,3 +1,4 @@
+streamlit
 flask
 transformers
 torch
@@ -5,6 +6,9 @@ sentence-transformers
 faiss-cpu
 langchain
 langchain-community
+langchain-text-splitters
 python-dotenv
+deep-translator
+google-generativeai
 PyPDF2
 numpy
